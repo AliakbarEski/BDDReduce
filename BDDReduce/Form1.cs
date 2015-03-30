@@ -12,6 +12,11 @@ using System.IO;
 //TODO: fix remove equal nodes function, fix lines from centres (use polar coords :D), fix text (size, coords)
 //make circle_radius dependent on the levels and the root coords on the expanse of the tree
 
+//TODO : parse the .input statement from the blif file, and take the first input, this will tell us where the inputs are starting from
+//using this number, set this as the starting level during the makeBDD call for that specific tree. Inside Apply BDD ensure that the difference in level is 
+//accounted for, if the levels arent same, the one with the smaller level has its entire tree copied into the next recursive call, This is is essential even for more complex
+//questions, where entire levels can be removed and the nodes have to simply be handed down over to the next recursive call until the levels are the same again.
+
 //#ThugLife - bacho ki barbaadi
 
 
